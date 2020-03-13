@@ -6,6 +6,6 @@ spec:
   ports:
   - name: http
     port: 8080        # Zarvis ingress looking for port '8080' by default
-    targetPort: 5000  # Flask application default port
+    targetPort: 8080  # Internal application default port
   selector:
     app: pedestal-api-swagger-app
