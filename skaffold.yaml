@@ -1,0 +1,12 @@
+apiVersion: skaffold/v2alpha4
+kind: Config
+metadata:
+  name: pedestal-api-swagger
+build:
+  artifacts:
+  - image: pedestal-api-swagger-img
+deploy:
+  kubectl:
+    manifests:
+    - k8s-deployment.yaml
+    - k8s-service.yaml
